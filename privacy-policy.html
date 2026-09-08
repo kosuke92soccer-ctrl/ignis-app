@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — IGNIS</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1c; --muted: #5a5a63;
+    --rule: #e3e3e8; --accent: #e5462f; --card: #f7f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10; --fg: #ececf0; --muted: #a0a0aa;
+      --rule: #2a2a30; --accent: #ff6a52; --card: #17171b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.85; font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 .5rem; letter-spacing: .01em; }
+  h2 {
+    font-size: 1.08rem; margin: 2.6rem 0 .6rem; padding-top: 1.3rem;
+    border-top: 1px solid var(--rule); letter-spacing: .01em;
+  }
+  .meta { color: var(--muted); font-size: .88rem; margin: 0 0 2rem; }
+  .meta strong { color: var(--fg); font-weight: 600; }
+  .lede {
+    background: var(--card); border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem; border-radius: 0 8px 8px 0; margin: 0 0 1rem;
+  }
+  p { margin: .8rem 0; }
+  ul { padding-left: 1.3rem; margin: .8rem 0; }
+  li { margin: .4rem 0; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.3rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">
+    アプリ名：<strong>IGNIS</strong>（トライアスロン伴走アプリ）<br>
+    最終更新日：<strong>2026年8月7日</strong>
+  </p>
+
+  <p class="lede">
+    本アプリ（以下「本アプリ」）は、ユーザーのプライバシーを最優先に設計されています。
+    本ポリシーは、本アプリがどのようにデータを扱うかを説明します。
+  </p>
+
+  <h2>1. 基本方針：データは端末内に留まります</h2>
+  <p>
+    本アプリ（v1）は、<strong>ユーザーの情報を収集・外部送信しません</strong>。
+    アカウント登録は不要で、サーバーを持たず、解析（アナリティクス）や広告のSDKも一切組み込んでいません。
+    あなたの記録は、あなたの端末の中だけに保存されます。
+  </p>
+
+  <h2>2. 端末内に保存される情報</h2>
+  <p>以下の情報は、Apple の SwiftData により<strong>お使いの端末内にのみ</strong>保存されます。</p>
+  <ul>
+    <li>トレーニング記録（種目・日時・距離・時間・心拍 等）</li>
+    <li>筋トレ記録（種目・セット・重量・レップ 等）</li>
+    <li>振り返りジャーナル（気分・本文）</li>
+    <li>目標大会・完走した大会・設定（週の目標頻度 等）</li>
+  </ul>
+  <p>
+    これらは開発者を含む第三者に送信されることはありません。
+    アプリを削除すると、これらのデータも端末から削除されます。
+  </p>
+
+  <h2>3. ヘルスケア（HealthKit）データの取り扱い</h2>
+  <p>
+    本アプリは、ユーザーの許可を得た範囲で Apple ヘルスケア（HealthKit）から次の情報を
+    <strong>読み取り専用で</strong>取得します。書き込みは行いません。
+  </p>
+  <ul>
+    <li>ワークアウト（ラン・バイク・スイムの種目・日時・距離・時間・心拍）</li>
+    <li><strong>ワークアウトのルート（位置情報）</strong> — 練習の軌跡を地図に表示するために使用します。</li>
+  </ul>
+  <p>これらについて、本アプリは以下を約束します。</p>
+  <ul>
+    <li>HealthKit から取得したデータを、<strong>広告・マーケティング目的で使用しません</strong>。</li>
+    <li>HealthKit から取得したデータを、<strong>第三者に提供・販売しません</strong>。</li>
+    <li>HealthKit から取得したデータを、<strong>外部サーバーに送信しません</strong>（端末内処理のみ）。</li>
+  </ul>
+  <p>本アプリは Apple の HealthKit に関するガイドラインを遵守します。</p>
+
+  <h2>4. 位置情報について</h2>
+  <p>
+    本アプリは、<strong>端末の位置情報を自ら取得することはありません</strong>（位置情報の利用許可を求めません）。
+    地図に表示される軌跡は、上記3のとおり<strong>すでに Apple ヘルスケアに保存されているワークアウトのルート</strong>を
+    読み取ったものであり、端末内で描画されるだけです。
+  </p>
+
+  <h2>5. ユーザー自身の操作でデータが端末外へ出る場合</h2>
+  <p>
+    次の機能は、<strong>ユーザーが明示的に操作したときにのみ</strong>動作します。
+    本アプリが自動で送信することはありません。
+  </p>
+  <ul>
+    <li><strong>共有カード・ルート画像の共有</strong> — 作成した画像を、ユーザーが選んだアプリ（SNS・メッセージ等）へ渡します。渡した先での取り扱いは、その提供事業者のポリシーに従います。</li>
+    <li><strong>写真ライブラリへの保存</strong> — ユーザーが保存を選んだ場合にのみ、画像を写真ライブラリに追加します。</li>
+    <li><strong>バックアップの書き出し</strong> — 記録をファイルとして書き出します。書き出したファイルの保管・共有はユーザーの責任で行ってください（記録内容がそのまま含まれます）。</li>
+  </ul>
+
+  <h2>6. ウィジェット</h2>
+  <p>
+    ホーム画面ウィジェットは、表示に必要な最小限の情報（今週の記録回数・次の大会など）を、
+    <strong>同一端末内の共有領域（App Group）</strong>を通じて受け取ります。
+    この情報が端末の外に出ることはありません。
+  </p>
+
+  <h2>7. 通知</h2>
+  <p>
+    リマインドや週次ダイジェストは、すべて<strong>端末内のローカル通知</strong>で行います。
+    通知のために情報を外部送信することはありません。
+  </p>
+
+  <h2>8. 第三者提供</h2>
+  <p>本アプリは、ユーザーの情報を第三者に提供・共有・販売しません。</p>
+
+  <h2>9. 将来のクラウド同期について（予告）</h2>
+  <p>
+    将来、複数端末間でのバックアップ・同期機能を提供する場合は、Apple の
+    <strong>iCloud（CloudKit プライベートデータベース）</strong>と<strong>Sign in with Apple</strong> を利用する予定です。
+    この場合もデータはユーザー自身の iCloud アカウントに帰属し、Apple により暗号化されます。
+    開発者がその内容を閲覧することはできません。
+    本機能の導入時には、本ポリシーを更新し、アプリ内で改めて説明します。
+  </p>
+
+  <h2>10. お子様のプライバシー</h2>
+  <p>本アプリは13歳未満の利用者を対象としていません。</p>
+
+  <h2>11. ポリシーの変更</h2>
+  <p>
+    本ポリシーは必要に応じて改定されることがあります。
+    重要な変更がある場合はアプリ内またはストア掲載情報でお知らせします。
+  </p>
+
+  <h2>12. お問い合わせ</h2>
+  <p>
+    本ポリシーに関するお問い合わせは下記までご連絡ください。<br>
+    連絡先：<a href="mailto:ignis.app.jp@gmail.com">ignis.app.jp@gmail.com</a>
+  </p>
+
+  <footer>
+    IGNIS — トライアスロン伴走アプリ
+  </footer>
+
+</main>
+</body>
+</html>

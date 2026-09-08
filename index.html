@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — IGNIS</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1c; --muted: #5a5a63;
+    --rule: #e3e3e8; --accent: #e5462f; --card: #f7f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10; --fg: #ececf0; --muted: #a0a0aa;
+      --rule: #2a2a30; --accent: #ff6a52; --card: #17171b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height: 1.85; font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.7rem; line-height: 1.4; margin: 0 0 .4rem; letter-spacing: .01em; }
+  h2 {
+    font-size: 1.08rem; margin: 2.6rem 0 .6rem; padding-top: 1.3rem;
+    border-top: 1px solid var(--rule); letter-spacing: .01em;
+  }
+  h3 { font-size: .98rem; margin: 1.6rem 0 .3rem; }
+  .meta { color: var(--muted); font-size: .88rem; margin: 0 0 2rem; }
+  .lede {
+    background: var(--card); border-left: 3px solid var(--accent);
+    padding: 1rem 1.15rem; border-radius: 0 8px 8px 0; margin: 0 0 1rem;
+  }
+  p { margin: .8rem 0; }
+  ul, ol { padding-left: 1.3rem; margin: .8rem 0; }
+  li { margin: .4rem 0; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  .contact {
+    background: var(--card); padding: 1.1rem 1.25rem;
+    border-radius: 10px; margin-top: 1rem;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.3rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>IGNIS サポート</h1>
+  <p class="meta">トライアスロン伴走アプリ</p>
+
+  <p class="lede">
+    IGNIS は、スイム・バイク・ラン・筋トレの記録を積み上げて、
+    成長を目に見える形にするアプリです。記録はすべてお使いのiPhoneの中だけに保存され、
+    外部に送信されることはありません。
+  </p>
+
+  <h2>はじめかた</h2>
+  <ol>
+    <li>アプリを開き、案内にそって<strong>これまでに完走した最長の大会</strong>を選びます（まだ無ければ「まだない」でOK）。</li>
+    <li><strong>Apple ヘルスケアと連携</strong>すると、これまでのラン・バイク・スイムが自動で取り込まれます。連携しなくても手入力で使えます。</li>
+    <li><strong>週の目標回数</strong>を決めます（あとから設定で変更できます）。</li>
+  </ol>
+
+  <h2>よくある質問</h2>
+
+  <h3>Garmin の記録がアプリに入ってきません</h3>
+  <p>
+    ほとんどの場合、<strong>Garmin Connect アプリがバックグラウンドで動いていない</strong>ことが原因です。
+    Garmin の記録は「時計 → Garmin Connect → Apple ヘルスケア → IGNIS」という順で届くため、
+    途中の Garmin Connect が iOS に停止させられていると、そこで止まってしまいます。
+  </p>
+  <ol>
+    <li>iPhoneの「設定」→「一般」→「Appのバックグラウンド更新」→ <strong>Garmin Connect をオン</strong></li>
+    <li><strong>低電力モードをオフ</strong>にする（オンだとバックグラウンド更新が止まります）</li>
+    <li>Garmin Connect を<strong>アプリスイッチャーから終了させない</strong>（強制終了したアプリは自動で再開されません）</li>
+    <li>Garmin Connect を最新版に更新する</li>
+  </ol>
+  <p>
+    あわせて Garmin Connect 側の設定も確認してください。
+    <strong>Garmin Connect アプリ →（右上メニュー）→ 設定 → Apple ヘルスケア</strong> を開き、
+    <strong>「すべてのカテゴリをオン」</strong>にします。過去の記録は同じ画面の「同期」で送れます。
+  </p>
+  <p>
+    急ぎのときは <strong>Garmin Connect を開いて数秒待つ</strong>と、溜まっていた記録がまとめてヘルスケアに流れ込みます。
+    そのあと IGNIS を開けば反映されます。
+  </p>
+  <p>
+    IGNIS の「設定」→「同期を診断（直近7日）」で、
+    <strong>ヘルスケア側にデータが届いているかどうか</strong>を確認できます。
+    ここに出てこない記録は、まだヘルスケアに届いていません。
+  </p>
+
+  <h3>Apple ヘルスケアと連携したのに何も入りません</h3>
+  <p>
+    iPhoneの「設定」→「プライバシーとセキュリティ」→「ヘルスケア」→ IGNIS を開き、
+    <strong>ワークアウトと距離の読み取りがオンになっているか</strong>を確認してください。
+    そのうえで IGNIS の「設定」→「ヘルスケアと連携して同期」をもう一度タップすると、取り込み直せます。
+  </p>
+
+  <h3>練習の地図が表示されません</h3>
+  <p>
+    地図は、ワークアウトに<strong>GPSの軌跡が記録されている場合だけ</strong>表示されます。
+    屋内トレーニング、プールでのスイム、手入力で追加した記録には軌跡がないため、地図は出ません。
+  </p>
+
+  <h3>記録を間違えました。修正できますか</h3>
+  <p>
+    できます。「記録」タブで該当の記録を開き、右上の鉛筆マークから編集してください。
+    削除も同じ画面から行えます。大会・筋トレのセッションも同様に編集・削除できます。
+  </p>
+
+  <h3>筋トレの途中でアプリを閉じてしまいました</h3>
+  <p>
+    入力は自動で保存されています。次にアプリを開いたときに
+    「中断したセッションがあります」と表示されるので、「再開する」を選んでください。
+  </p>
+
+  <h3>通知を止めたい／変えたい</h3>
+  <p>
+    IGNIS の「設定」から、週次のふりかえりと練習リマインドをそれぞれオン・オフできます。
+    リマインドは<strong>週の目標に届いていないときだけ</strong>送られ、達成した週には届きません。
+  </p>
+
+  <h3>データのバックアップはできますか</h3>
+  <p>
+    「設定」からバックアップファイルを書き出せます。
+    記録はこの端末の中だけにあるため、<strong>機種変更の前には書き出しておくことをおすすめします</strong>。
+  </p>
+
+  <h2>ご注意</h2>
+  <p>
+    本アプリは医療アドバイスを提供するものではありません。
+    体調に不安があるときは、無理をせず医師にご相談ください。
+  </p>
+
+  <h2>お問い合わせ</h2>
+  <div class="contact">
+    <p style="margin:0">
+      不具合のご報告・ご要望はこちらまでお気軽にどうぞ。<br>
+      <a href="mailto:ignis.app.jp@gmail.com">ignis.app.jp@gmail.com</a>
+    </p>
+  </div>
+  <p>
+    不具合のご報告では、<strong>お使いのiPhoneの機種・iOSのバージョン・どの操作で起きたか</strong>を
+    書き添えていただけると、原因を特定しやすく助かります。
+  </p>
+
+  <h2>プライバシー</h2>
+  <p>
+    IGNIS はアカウント登録が不要で、サーバーを持たず、解析や広告のSDKも組み込んでいません。
+    詳しくは <a href="privacy-policy.html">プライバシーポリシー</a> をご覧ください。
+  </p>
+
+  <footer>
+    IGNIS — トライアスロン伴走アプリ
+  </footer>
+
+</main>
+</body>
+</html>
